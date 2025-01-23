@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:paddingVertical="5dp"
+            android:gravity="center"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            android:background="#c26e6e"/>
+
+        <ImageView
+            android:layout_marginVertical="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@drawable/logo"
+            >
+        </ImageView>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:padding="12dp">
+            <TableRow
+                android:layout_margin="2dp"
+                android:padding="10dp"
+                android:background="#d6a3a3"
+                >
+                <TextView
+                    android:textStyle="bold"
+                    android:padding="5dp"
+                    android:background="#b87070"
+                    android:text="User Id" />
+                <TextView
+                    android:text=":"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:padding="4dp"/>
+
+                <EditText
+                    android:id="@+id/etUserId"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:inputType="text" />
+            </TableRow>
+
+            <TableRow
+                android:padding="10dp"
+                android:layout_margin="2dp"
+                android:background="#d6a3a3"
+                >
+                <TextView
+                    android:textStyle="bold"
+                    android:padding="5dp"
+                    android:background="#b87070"
+                    android:text="Password   " />
+                <TextView
+                    android:text=":"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:padding="4dp"/>
+                <EditText
+                    android:id="@+id/etPW"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:inputType="numberPassword"/>
+            </TableRow>
+            <CheckBox
+                android:id="@+id/cbRememberUserId"
+                android:background="#d6a3a3"
+                android:layout_margin="2dp"
+                android:text="Remember User Id"
+                android:paddingHorizontal="15dp"/>
+            <CheckBox
+                android:id="@+id/cbRememberPassword"
+                android:background="#d6a3a3"
+                android:layout_margin="2dp"
+                android:text="Remember password"
+                android:padding="10dp"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_marginLeft="20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Don't have an account?"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="10dp"/>
+
+                <Button
+                    android:id="@+id/btnSignup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sign up"
+                    android:textSize="15dp"
+                    android:textColor="#486bdb"
+                    android:backgroundTint="#00FFFFFF"/>
+            </LinearLayout>
+
+
+        </TableLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#c26e6e">
+            <Button
+                android:id="@+id/btnExit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Exit"
+                android:textSize="18dp"
+                android:backgroundTint="#c26e6e"
+                android:textColor="@color/white"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="|"
+                android:gravity="center"
+                android:textSize="24sp"/>
+            <Button
+                android:id="@+id/btnGo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Go"
+                android:textSize="18dp"
+                android:backgroundTint="#c26e6e"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

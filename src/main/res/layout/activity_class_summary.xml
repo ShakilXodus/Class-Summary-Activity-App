@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".ClassSummaryActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Class Summary "
+            android:paddingVertical="5dp"
+            android:gravity="center"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            android:background="#c26e6e"
+            />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:padding="12dp">
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:background="#b87070"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginHorizontal="30dp"
+                    android:paddingHorizontal="10dp">
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="Course :"
+                        android:textSize="25dp"
+                        android:paddingVertical="10dp"/>
+
+                    <TextView
+                        android:id="@+id/tvCourseName"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="Course Name"
+                        android:textStyle="bold"
+                        android:textSize="25dp"
+                        android:padding="4dp"/>
+                </LinearLayout>
+
+
+
+
+            <TableRow
+                android:layout_margin="2dp"
+                android:padding="10dp"
+                android:background="#d6a3a3"
+                >
+
+                <TextView
+                    android:background="#b87070"
+                    android:padding="5dp"
+                    android:text="Type"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:text=":"
+                    android:textStyle="bold"
+                    android:textSize="20dp"/>
+                <RadioGroup
+                    android:id="@+id/radioType"
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:id="@+id/radiobtnTheory"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Theory"
+                        android:paddingRight="30dp"/>
+                    <RadioButton
+                        android:id="@+id/radiobtnLab"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lab"/>
+                </RadioGroup>
+            </TableRow>
+
+
+            <TableRow
+                android:layout_margin="2dp"
+                android:padding="10dp"
+                android:background="#d6a3a3"
+                >
+                <TextView
+                    android:background="#b87070"
+                    android:textStyle="bold"
+                    android:padding="5dp"
+                    android:text="Date"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:text=":"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:padding="4dp"/>
+                <EditText
+                    android:id="@+id/etDate"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:inputType="text"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="Enter date" />
+            </TableRow>
+
+            <TableRow
+                android:layout_margin="2dp"
+                android:padding="10dp"
+                android:background="#d6a3a3"
+                >
+                <TextView
+                    android:background="#b87070"
+                    android:textStyle="bold"
+                    android:padding="5dp"
+                    android:text="Lecture"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:text=":"
+                    android:textStyle="bold"
+                    android:textSize="20dp"/>
+                <EditText
+                    android:id="@+id/etLecture"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:inputType="numberDecimal"
+                    android:hint="Enter lecture number"/>
+            </TableRow>
+
+
+            <TableRow
+                android:layout_margin="2dp"
+                android:padding="10dp"
+                android:background="#d6a3a3"
+                >
+                <TextView
+                    android:background="#b87070"
+                    android:textStyle="bold"
+                    android:padding="5dp"
+                    android:text="Topic"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:text=":"
+                    android:textStyle="bold"
+                    android:textSize="20dp"/>
+                <EditText
+                    android:id="@+id/etTopic"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:inputType="text"
+                    android:hint="Enter topic title"/>
+            </TableRow>
+
+
+            <TextView
+                android:text="Summary of the lecture : "
+                android:textStyle="bold"
+                android:background="#b87070"
+                android:padding="5dp"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="5dp"
+                android:textSize="18dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/etSummary"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#e0bcbc"
+                    android:hint="Insert the keywords or phrases discussed in the class. Each keyword or phrases must be separated by comma(,)"
+                    android:inputType="textMultiLine"
+                    android:maxLines="5"
+                    android:padding="8dp" />
+
+            </LinearLayout>
+
+        </TableLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#c26e6e">
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Cancel"
+                android:textSize="18dp"
+                android:backgroundTint="#c26e6e"
+                android:textColor="@color/white"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="|"
+                android:gravity="center"
+                android:textSize="24sp"/>
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Save"
+                android:textSize="18dp"
+                android:backgroundTint="#c26e6e"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

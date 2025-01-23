@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:id="@+id/listarray"
+    android:orientation="vertical"
+    android:background="#c26e6e"
+    android:padding="4dp"
+    android:layout_marginVertical="5dp"
+    android:layout_marginHorizontal="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#914747"
+        android:layout_margin="3dp">
+
+        <TextView
+            android:id="@+id/tvLectureTopic"
+            android:text="topic"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:layout_margin="8dp"
+            android:textStyle="bold"
+            android:padding="5dp"/>
+
+        <TextView
+            android:id="@+id/tvLectureDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2022900-"
+            android:textStyle="italic"
+            android:padding="5dp"
+            android:layout_margin="8dp"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tvLectureSummary"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="aofuigeugf uerguseh heg hi  "
+        android:padding="5dp"
+        android:layout_marginHorizontal="3dp"
+        android:background="#d9a0a0"
+        android:layout_weight="1"/>
+
+
+</LinearLayout>
